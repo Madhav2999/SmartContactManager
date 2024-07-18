@@ -52,6 +52,7 @@ public class AuthController {
                 .type(MessageType.red)
                 .content("Email not verified ! Token is not associated with user .")
                 .build());
+        System.out.println("hello");
 
         return "error_page";
     }
