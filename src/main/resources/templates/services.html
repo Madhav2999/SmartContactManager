@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<hr />
+<div th:replace="base :: parent(~{::#main_content}, 'Services', ~{::script})">    <section id="main_content">
+        <h1>This is Dyanmic services passed to base parent</h1>
+    </section>
+    <script>
+        console.log("Services page");
+    </script>
+</div>
+</body>
+</html>
